@@ -1,17 +1,16 @@
 import { FC } from "react"
-
-/*type inputProps = {
-    placeholder: string
-}*/
+import './Input.scss'
 
 interface InputProps extends React.InputHTMLAttributes <HTMLInputElement> {
-    placeholder ?: string
+    placeholder ?: string,
+    name : string,
 }
 
-const Input : FC<InputProps> = ({...props }) => {
+const Input : FC<InputProps> = ({name, placeholder, ...props }) => {
     return(
         <div>
-            <input {...props}/>
+            <input id={name} placeholder=" " {...props}/>
+            <label htmlFor={name} >{placeholder}</label>
         </div>
     )
 }

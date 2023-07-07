@@ -1,10 +1,13 @@
+import Input from '@/components/Input/Input'
 import styles from './page.module.css'
 
-export default function homePage() {
+export default function signUp() {
   return (
     <main className={styles.main}>
     <div>
-      <h1>STUUKY</h1>
+      <Input name='username' placeholder='Digite seu username'/>
+      <Input name='email' placeholder='Digite seu email'/>
+      <Input name='password' type='password' placeholder='Digite sua senha'/>
     </div>
     </main>
   )

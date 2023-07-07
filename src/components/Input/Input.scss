@@ -1,11 +1,28 @@
 div {
+  position: relative;
   display: flex;
+  align-items: center;
 
   input {
+    color: #62676c;
+    border-radius: 6px;
+    outline: none;
+    border: 0;
+    background-color: #ebf2f7;
+    width: 20em;
+    height: auto;
     align-self: center;
+    font-size: 1rem;
+    padding: 1rem 0 1rem 1.5rem;
+    &:not(:placeholder-shown) + label {
+      opacity: 0;
+    }
   }
 
-  &:hover {
-
+  label{
+    color: #62676c;
+    font-size: 16px;
+    position: absolute;
+    left: 1.5rem;
   }
 }
