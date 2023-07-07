@@ -1,5 +1,5 @@
 import styles from './page.module.css'
-import Input from '../../components/Input'
+import Input from '../../components/Input/Input'
 
 export default function englishPage(){
     return(
