@@ -1,6 +1,9 @@
 # Stuuky
 This is Stuuky. A learning plataform that is exclusive to ETECs students!!
 
+## Technologies Used
+
+[![My Skills](https://skillicons.dev/icons?i=nodejs,next,react,typescript,sass&)](https://skillicons.dev)
 ## Getting Started
 
 First, run the development server:
@@ -15,6 +18,3 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
