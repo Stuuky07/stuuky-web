@@ -1,5 +1,5 @@
 import Input from '@/components/Input/Input'
-import styles from './page.module.css'
+import styles from './page.module.scss'
 
 export default function signUp() {
   return (
