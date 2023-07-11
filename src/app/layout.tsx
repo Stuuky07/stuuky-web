@@ -1,8 +1,6 @@
 import '../styles/globals.scss'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import { inter } from '@/utils/fonts/font'
 
 export const metadata: Metadata = {
   title: 'Stuuky',

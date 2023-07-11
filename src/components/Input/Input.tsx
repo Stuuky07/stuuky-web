@@ -2,8 +2,8 @@ import { FC } from "react"
 import './Input.scss'
 
 interface InputProps extends React.InputHTMLAttributes <HTMLInputElement> {
-    placeholder ?: string,
-    name : string,
+    placeholder: string,
+    name: string,
 }
 
 const Input : FC<InputProps> = ({name, placeholder, ...props }) => {
