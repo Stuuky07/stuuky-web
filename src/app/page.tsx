@@ -6,7 +6,7 @@ export default function homePage() {
     <main className={styles.main}>
       <div>
         <h1>STUUKY</h1>
-        <Button name='btn' id='btn' value='Entrar'/>
+        <Button name='btn' id='btn' value='Próximo'/> Próximo
       </div>
     </main>
   );
