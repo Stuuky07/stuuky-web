@@ -16,6 +16,18 @@ export default function homePage() {
         <div>
           <Link href="/login">LOGIN</Link>
         </div>
+        <div>
+          <Link href="/main">MAIN</Link>
+        </div>
+        <div>
+          <Link href="/findquestions">FIND QUESTIONS</Link>
+        </div>
+        <div>
+          <Link href="/askquestions">ASK QUESTIONS</Link>
+        </div>
+        <div>
+          <Link href="/anwsers">ANWSERS</Link>
+        </div>
       </div>
     </main>
   );
