@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { inter, montserrat } from '@/utils/fonts/font'
 import Link from 'next/link'
 import SaturnPlanet from '@/components/Saturn/Saturn'
+import Circle from '@/components/Circle/Circle'
 
 export default function signUp() {
   return (
@@ -35,6 +36,7 @@ export default function signUp() {
           </h6>
         </form>
         <SaturnPlanet/>
+        <Circle opacity={80} image-component={Image}/>
       </div>
     </main>
   )
