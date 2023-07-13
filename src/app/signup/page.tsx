@@ -4,6 +4,7 @@ import './style.scss'
 import Image from 'next/image'
 import { inter, montserrat } from '@/utils/fonts/font'
 import Link from 'next/link'
+import SaturnPlanet from '@/components/Saturn/Saturn'
 
 export default function signUp() {
   return (
@@ -18,10 +19,10 @@ export default function signUp() {
           <div className='input-container'>
             <Input name='username' placeholder='Nome de Usuário' />
             <Input name='email' placeholder='E-mail' />
-            <Input name='password' placeholder='Senha' />
+            <Input name='password' type='password' placeholder='Senha' />
           </div>
           <span className='burocratic-info'>Ao criar uma conta, você concorda com a <span>Política de Privacidade</span> e 
-com os <span>Termos de Uso</span> da Stuuky.</span>
+          com os <span>Termos de Uso</span> da Stuuky.</span>
           <div className='submit-div'>
             <Button name='submit' value='Próximo' />
           </div>
@@ -33,6 +34,7 @@ com os <span>Termos de Uso</span> da Stuuky.</span>
             </Link>
           </h6>
         </form>
+        <SaturnPlanet/>
       </div>
     </main>
   )
