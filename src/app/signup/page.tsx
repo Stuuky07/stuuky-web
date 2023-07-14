@@ -6,6 +6,7 @@ import { inter, montserrat } from '@/utils/fonts/font'
 import Link from 'next/link'
 import SaturnPlanet from '@/components/Saturn/Saturn'
 import Circle from '@/components/Circle/Circle'
+import Form from './form'
 
 export default function signUp() {
   return (
@@ -18,9 +19,7 @@ export default function signUp() {
             <h5>Crie seu perfil Stuuky para fazer e responder perguntas de suas matérias preferidas, ganhar pontos e subir no ranking de sua escola</h5>
           </div>
           <div className='input-container'>
-            <Input name='username' placeholder='Nome de Usuário' />
-            <Input name='email' placeholder='E-mail' />
-            <Input name='password' type='password' placeholder='Senha' />
+           <Form/>
           </div>
           <span className='burocratic-info'>Ao criar uma conta, você concorda com a <span>Política de Privacidade</span> e 
           com os <span>Termos de Uso</span> da Stuuky.</span>

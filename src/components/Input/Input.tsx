@@ -4,6 +4,7 @@ import './Input.scss'
 interface InputProps extends React.InputHTMLAttributes <HTMLInputElement> {
     placeholder: string,
     name: string,
+    error?: boolean
 }
 
 const Input : FC<InputProps> = ({name, placeholder, ...props }) => {
