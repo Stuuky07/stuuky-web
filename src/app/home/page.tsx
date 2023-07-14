@@ -2,10 +2,10 @@ import styles from './page.module.scss'
 
 import Title from '@/components/Title/Title'
 
-export default function profile() {
+export default function home() {
  return(
   <div className={styles.main}>
-   <Title name='title' h1='Perfil'/>
+   <Title name='title' h1='Home'/>
   </div>
  )
 }
