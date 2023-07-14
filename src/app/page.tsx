@@ -1,7 +1,7 @@
-import Button from '@/components/Button/Button';
-import styles from './page.module.scss';
-import Title from '@/components/Title/Title';
-import Link from 'next/link';
+import Button from '@/components/Button/Button'
+import styles from './page.module.scss'
+import Title from '@/components/Title/Title'
+import Link from 'next/link'
 
 export default function homePage() {
   return (
@@ -19,16 +19,7 @@ export default function homePage() {
         <div>
           <Link href="/home">HOME</Link>
         </div>
-        <div>
-          <Link href="/findquestions">FIND QUESTIONS</Link>
-        </div>
-        <div>
-          <Link href="/askquestions">ASK QUESTIONS</Link>
-        </div>
-        <div>
-          <Link href="/anwsers">ANWSERS</Link>
-        </div>
       </div>
-    </main>
-  );
+    </main >
+  )
 }
