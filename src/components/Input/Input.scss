@@ -1,4 +1,4 @@
-div {
+.input-div {
   position: relative;
   display: flex;
   align-items: center;
@@ -27,4 +27,16 @@ div {
     left: 1rem;
     cursor: text;
   }
+
+  .error {
+    border-bottom: 2px solid red !important;
+  }
+
+}
+.error-span {
+  width: 100%;
+  display: flex;
+  color: red;
+  display: flex;
+  
 }

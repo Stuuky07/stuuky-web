@@ -1,19 +1,24 @@
-import { FC } from "react"
+import { InputHTMLAttributes, forwardRef } from 'react'
 import './Input.scss'
 
-interface InputProps extends React.InputHTMLAttributes <HTMLInputElement> {
+interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
     placeholder: string,
-    name: string,
-    error?: boolean
+    id: string,
+    errorMessage: string | undefined,
 }
 
-const Input : FC<InputProps> = ({name, placeholder, ...props }) => {
-    return(
-        <div>
-            <input id={name} placeholder=" " {...props}/>
-            <label htmlFor={name} >{placeholder}</label>
-        </div>
-    )
-}
+const Input = forwardRef<HTMLInputElement, InputProps>(
+    function Input({ errorMessage, id, placeholder, ...props }, ref) {
+        return (
+            <>
+                <div className='input-div'>
+                    <input id={id} placeholder=" " className={`${errorMessage && 'error'}`} ref={ref} {...props} />
+                    <label htmlFor={id} >{placeholder}</label>
+                </div>
+                {errorMessage && <span className='error-span'>{errorMessage}</span>}
+            </>
+        )
+    }
+)
 
 export default Input

@@ -10,6 +10,7 @@ import { signUpUserFormSchema } from '../utils/signupSchema'
 import Input from '@/components/Input/Input'
 import Button from '@/components/Button/Button'
 import linkArrowImage from '@/assets/icons/small-arrow.svg'
+import error from 'next/error'
 
 type FormData = {
   username: string,
@@ -29,31 +30,32 @@ const Form = () => {
 
   const handleSignUp = (data: FormData) => {
     try {
-      const result = signUpUserFormSchema.parse(data)
-      console.log(result)
+      console.log(data)
     } catch (err) {
       console.log(err)
     }
   }
-
+  console.log(errors.username)
   return (
     <form onSubmit={handleSubmit(handleSignUp)}>
       <div className='input-container'>
         <Input
-          placeholder='Username'
           {...register("username")}
-          error={!!errors.username?.message}
+          placeholder='Username'
+          id='username'
+          errorMessage={errors.username?.message}
         />
-
         <Input
-          placeholder='E-mail'
           {...register("email")}
-          error={!!errors.email?.message} />
-
+          placeholder='E-mail'
+          id='email'
+          errorMessage={errors.email?.message}
+        />
         <Input
-          placeholder='Senha'
           {...register("password")}
-          error={!!errors.password?.message}
+          placeholder='Senha'
+          id='password'
+          errorMessage={errors.password?.message}
         />
       </div>
 

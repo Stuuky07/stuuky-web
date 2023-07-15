@@ -3,7 +3,7 @@ import Image from 'next/image'
 import './style.scss'
 import Form from './components/Form'
 import SaturnPlanet from '@/components/Saturn/Saturn'
-import Planet from '@/components/Circle/Planet'
+import Planet from '@/components/Planet/Planet'
 import { montserrat } from '@/utils/fonts/font'
 
 export default function signUp() {
