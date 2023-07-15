@@ -5,77 +5,30 @@ main {
   margin-top: 2rem;
 
   .main-container {
+    width: 420px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    margin-top: 6rem;
 
-    form {
+    .title-container {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      width: 22%;
-      margin-top: 6rem;
+      color: #ffffff;
+      gap: .75rem;
 
-      .title-container {
-        display: flex;
-        flex-direction: column;
-        color: #ffffff;
-        gap: .75rem;
-
-        h1 {
-          font-size: 1.75rem;
-          font-weight: 600;
-          text-align: center;
-          line-height: 120%;
-        }
-        h5 {
-          font-size: 1rem;
-          font-weight: 400;
-          text-align: center;
-          color: rgba(255, 255, 255, 0.8);
-          width: 90%;
-        }
+      h1 {
+        font-size: 1.75rem;
+        font-weight: 600;
+        text-align: center;
+        line-height: 120%;
       }
-      
-      .input-container {
-        display: flex;
-        flex-direction: column;
-        gap: 1.25rem;
-        margin-top: 2.25rem;
-      }
-
-      .burocratic-info {
-        color: rgba(255, 255, 255, 0.8);
-        font-size: .75rem;
+      h5 {
+        font-size: 1rem;
         font-weight: 400;
         text-align: center;
-        margin-top: 1.5rem;
-
-        span {
-          text-decoration: underline;
-          cursor: pointer;
-        }
-      }
-
-      .submit-div {
-        width: 100%;
-        margin-top: 1.5rem;
-      }
-
-      .login-link {
         color: rgba(255, 255, 255, 0.8);
-        font-size: .75rem;
-        align-self: center;
-        display: flex;
-        gap: .25rem;
-        margin-top: .625rem;
-
-        a {
-          color: #ffffff;
-          text-decoration: none;
-          display: flex;
-          align-items: center;
-          gap: .5rem;
-        }
+        width: 90%;
       }
     }
   }

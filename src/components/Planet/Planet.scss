@@ -1,0 +1,17 @@
+.planet{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  &[data-variant='large'] {
+    opacity: 0.8;
+  }
+
+  &[data-variant='medium'] {
+    opacity: 0.6;
+  }
+
+  &[data-variant='small'] {
+    opacity: 0.3;
+  }
+}

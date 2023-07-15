@@ -1,11 +1,11 @@
 import { z } from 'zod'
 
-export const userSchema = z.object({
+const signUpUserFormSchema = z.object({
 
   username: z.string()
     .nonempty('Digite o username')
     .min(3, 'Username deve ter no mínimo 3 dígitos')
-    .max(10, 'Username deve ter até 10 dígitos'),
+    .max(32, 'Username deve ter até no máximo 32 dígitos'),
 
   email: z.string()
     .nonempty('Digite o email')
@@ -18,4 +18,4 @@ export const userSchema = z.object({
 
 })
 
-type schemaType = z.infer<typeof userSchema>
+export { signUpUserFormSchema }

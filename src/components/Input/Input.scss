@@ -5,6 +5,7 @@ div {
   width: 100%;
 
   input {
+    height: 40px;
     color: #040011;
     border-radius: 6px;
     outline: none;
@@ -13,7 +14,7 @@ div {
     width: 100%;
     align-self: center;
     font-size: 1rem;
-    padding: 0.66rem 1rem;
+    padding: 0 1rem;
     &:not(:placeholder-shown) + label {
       opacity: 0;
     }
